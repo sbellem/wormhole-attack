@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  wormhole-soteria-scan:
+    image: wormhole-soteria-scan
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./soteria:/tmp/soteria
