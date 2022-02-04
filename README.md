@@ -6,7 +6,19 @@ to scan the code for vulnerabilities. See
 https://www.soteria.dev/post/the-wormhole-hack-how-soteria-detects-the-vulnerability-automatically
 for details about the attack and soteria.
 
-To run the scan:
+The quickest way to run the example is by using the image from dockerhub:
+
+```console
+docker run --rm sbellem/wormhole-soteria-scan
+```
+
+Alternatively, clone this repo, e.g.:
+
+```console
+git clone https://github.com/sbellem/wormhole-attack-analysis.git
+```
+
+and run:
 
 ```console
 docker-compose run --rm wormhole-soteria-scan
