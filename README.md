@@ -1,7 +1,18 @@
 # wormhole attack analysis
 Scattered notes on the wormhole attack
 
-See https://www.soteria.dev/post/the-wormhole-hack-how-soteria-detects-the-vulnerability-automatically
+The Dockerfile sets a wormhole version prior to the patched version, and uses soteria
+to scan the code for vulnerabilities. See
+https://www.soteria.dev/post/the-wormhole-hack-how-soteria-detects-the-vulnerability-automatically
+for details about the attack and soteria.
+
+To run the scan:
+
+```console
+docker-compose run --rm wormhole-soteria-scan
+```
+
+You should see an output similar to:
 
 ![image](https://user-images.githubusercontent.com/125458/152494070-29558993-993a-49bf-8218-6b2a59dea54a.png)
 
