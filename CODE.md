@@ -17,10 +17,9 @@ pub fn verify_signatures(
 What is `accs`? It's a `VerifySignatures` struct:
 
 ```rust
-
-#[derive(FromAccounts)]
 // solana/bridge/program/src/api/verify_signature.rs
 
+#[derive(FromAccounts)]
 pub struct VerifySignatures<'b> {
     /// Payer for account creation
     pub payer: Mut<Signer<Info<'b>>>,
@@ -48,7 +47,7 @@ pub type Info<'r> = AccountInfo<'r>;
 
 What is [`AccountInfo`](https://docs.rs/solana-program/latest/solana_program/account_info/struct.AccountInfo.html)?
 
-It's a struct ([`solana_program::account_info::AccountInfo`](https://docs.rs/solana-program/latest/solana_program/account_info/struct.AccountInfo.html#)):
+It's a struct (`solana_program::account_info::AccountInfo`):
 
 ```rust
 pub struct AccountInfo<'a> {
