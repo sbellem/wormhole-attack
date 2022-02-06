@@ -18,7 +18,7 @@ pub fn verify_signatures(
         return Err(SolitaireError::InvalidSysvar(*accs.instruction_acc.key));
     }
 // ...
-```    
+```
 
 Excerpt from the [incident report](https://wormholecrypto.medium.com/wormhole-incident-report-02-02-22-ad9b8f21eec6):
 
